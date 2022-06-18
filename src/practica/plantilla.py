@@ -1,5 +1,5 @@
 ################
-# Nombre - @usuario_github
+# Iván Piñero - @Iv4P
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
@@ -7,7 +7,6 @@
 Enunciado del ejercicio
 """
 # Reemplazar por las funciones del ejercicio
-
 
 def principal():
     """
