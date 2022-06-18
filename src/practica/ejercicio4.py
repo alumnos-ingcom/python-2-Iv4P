@@ -21,7 +21,7 @@ def fibonacci(cant):
     num2 = 1
     total = 0
     i = 1
-    while i <= cant:
+    while i <= abs(cant):
         i = i + 1 
         num1 = num2 
         num2 = total
@@ -33,9 +33,9 @@ def principal():
     Esta función es la que se encarga de la parte 'interactiva' del ejercicio
     (La entrada, la llamada al algoritmo y la salida)
     """
-    cant = int(input("Ingrese el termino de fibonacci: "))
+    cant = int(input("Ingrese el termino de fibonacci positivo: "))
     res = fibonacci(cant)
-    print(f"El numero {cant} de fibonacci es {res}")
+    print(f"El numero {abs(cant)} de fibonacci es {res}")
 
 
 if __name__ == "__main__":
