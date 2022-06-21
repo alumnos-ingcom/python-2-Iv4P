@@ -10,22 +10,17 @@ Implementar una funcion que codifique un texto rotandolo una cantidad de posicio
 Implementar la funcion que decodifique el texto rotado una cantidad de posiciones ajustable.
 """
 
-# Reemplazar por las funciones del ejercicio
 def cifrado(cadena, n):
     """
     Esta funcion se encarga de mover n posiciones el caracter 
     modificado al codigo ASCII 
     ejemplo A en ASCII es 65, + 5 (70) seria F 
     """
+    cadena = cadena.lower()
     total = ""
     for i in cadena:
         if ord(i) >96 and ord(i) <123:
             if ord(i)+n > 122:
-                total = total + chr(ord(i)-26+n)
-            else:
-                total = total + chr(ord(i)+n)
-        elif ord(i) >= 65 and ord(i) <= 90:
-            if ord(i)+n > 90:
                 total = total + chr(ord(i)-26+n)
             else:
                 total = total + chr(ord(i)+n)
@@ -41,11 +36,6 @@ def descifrado(cadena, n):
     for i in cadena:
         if ord(i) >96 and ord(i) <123:
             if ord(i)-n < 97:
-                total = total + chr(ord(i)+26-n)
-            else:
-                total = total + chr(ord(i)-n)
-        elif ord(i) >= 65 and ord(i) <= 90:
-            if ord(i)-n < 65:
                 total = total + chr(ord(i)+26-n)
             else:
                 total = total + chr(ord(i)-n)
