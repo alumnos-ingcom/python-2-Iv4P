@@ -15,9 +15,9 @@ def super_puestos(lista1, lista2):
     verifica si el resto de chars son iguales
     """
     cont = 0
-    for i in range(lista1.index(lista2[0]),(len(lista2))):
+    for i in range(lista1.index(lista2[0]), (len(lista2))):
             if lista1[i]==lista2[i]:
-                cont = cont +1
+                cont = cont + 1
     posicion = lista1.index(lista2[0])
     return cont, posicion
 

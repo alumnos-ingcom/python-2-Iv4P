@@ -16,11 +16,11 @@ def test_cifrado():
     cadena = "HoLa"
     n = 4
     res = cifrado(cadena, n)
-    assert res == "LsPe", "El resultado tiene que ser LsPe"
+    assert res == "lspe", "El resultado tiene que ser LsPe"
 
 def test_descifrado():
-    cadena = "LsPe"
+    cadena = "lspe"
     n = 4
     res = descifrado(cadena, n)
-    assert res == "HoLa", "El resultado tiene que ser HoLa"
+    assert res == "hola", "El resultado tiene que ser HoLa"
 
